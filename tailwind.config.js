@@ -1,4 +1,7 @@
+const { fontFamily } = require('tailwindcss/defaultTheme') 
+
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -7,6 +10,17 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-manrope)', ...fontFamily.sans],
+      },
+      colors: {
+       'deepOrange': "#D87D4A",
+       "lightOrange": '#fbaf85',
+       "lightBlack": '#101010',
+       "lightGray":'#FAFAFA',
+       'deepGray':'#F1F1F1'
+      },
+     
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
