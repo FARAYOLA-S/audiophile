@@ -1,9 +1,9 @@
 import React from "react";
-import { useRouter } from "next/router";
+
 import Link from "next/link";
 
 function Nav(props) {
-  const router = useRouter();
+
   return (
     <div className={props.className}>
       <ul className={props.nav}>
